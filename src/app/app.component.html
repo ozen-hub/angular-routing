@@ -1,11 +1,12 @@
 <h1>Hello this is Main Component</h1>
 <br>
-<input type="text" placeholder="customer name" #customerNameInput>
+<input type="text" placeholder="customer name" #customerNameInput> &nbsp;
+<input type="text" placeholder="Item code" #itemData>
 <br>
 <br>
 <div>
   <button routerLink="/customer/{{customerNameInput.value}}" routerLinkActive="active">Customer</button>
-  <button routerLink="/item" routerLinkActive="active">Item</button>
+  <button (click)="navigateWithClick('/item', itemData.value)" routerLinkActive="active">Item</button>
   <button routerLink="/order" routerLinkActive="active">Order</button>
 
   <button (click)="navigateToLink('/place-order')"

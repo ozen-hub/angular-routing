@@ -10,7 +10,7 @@ import {NotFoudPageComponent} from "./components/not-foud-page/not-foud-page.com
 const routes: Routes = [
   {path:'',redirectTo:'/customer', pathMatch:'full'},
   {path:'customer/:name',component:CustomerComponent},
-  {path:'item',component:ItemComponent},
+  {path:'item/:data',component:ItemComponent},
   {path:'order',component:OrderComponent},
   {path:'place-order',component:PlaceOrderComponent},
   {path:'**',component:NotFoudPageComponent}

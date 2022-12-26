@@ -21,4 +21,13 @@ export class AppComponent {
       console.log(e)
     });
   }
+
+  navigateWithClick(link: string, data: string) {
+    /* this.router.navigate([link,data]).then(e=>{
+      console.log(e)
+    });*/
+    this.router.navigateByUrl(link+"/"+data).then(e=>{
+      console.log(e)
+    });
+  }
 }
