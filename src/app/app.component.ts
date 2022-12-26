@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app3';
+  constructor(
+    private router:Router
+  ) {
+  }
+
+  navigateToLink(link: string) {
+   /* this.router.navigate([link]).then(e=>{
+      console.log(e)
+    });*/
+    this.router.navigateByUrl(link).then(e=>{
+      console.log(e)
+    });
+  }
 }

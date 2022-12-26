@@ -5,7 +5,9 @@
   <button routerLink="/customer" routerLinkActive="active">Customer</button>
   <button routerLink="/item" routerLinkActive="active">Item</button>
   <button routerLink="/order" routerLinkActive="active">Order</button>
-  <button routerLink="/place-order" routerLinkActive="active">Place Order</button>
+
+  <button (click)="navigateToLink('/place-order')"
+          routerLinkActive="active">Place Order</button>
 </div>
 
 <hr>
