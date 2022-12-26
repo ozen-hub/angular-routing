@@ -7,13 +7,17 @@ import {ActivatedRoute} from "@angular/router";
   styleUrls: ['./customer.component.scss']
 })
 export class CustomerComponent implements OnInit {
-  selectedName:string = '';
+  selectedName: string = '';
 
   constructor(private activeRoute: ActivatedRoute) {
   }
 
   ngOnInit(): void {
-    this.selectedName = this.activeRoute.snapshot.paramMap.get('name')!;
+    //this.selectedName = this.activeRoute.snapshot.paramMap.get('name')!;
+    this.activeRoute.paramMap.subscribe(response=>{
+     // window.scrollTo(0,0)
+      this.selectedName = response.get('name')!;
+    })
   }
 
 }
