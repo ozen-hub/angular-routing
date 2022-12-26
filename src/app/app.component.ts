@@ -7,25 +7,42 @@ import {Router} from "@angular/router";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app3';
-  constructor(
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*constructor(
     private router:Router
   ) {
-  }
+  }*/
 
-  navigateToLink(link: string) {
-   /* this.router.navigate([link]).then(e=>{
+  /*navigateToLink(link: string) {
+   /!* this.router.navigate([link]).then(e=>{
       console.log(e)
-    });*/
+    });*!/
     this.router.navigateByUrl(link).then(e=>{
       console.log(e)
     });
   }
 
   navigateWithClick(link: string, data: string) {
-    /* this.router.navigate([link,data]).then(e=>{
+    /!* this.router.navigate([link,data]).then(e=>{
       console.log(e)
-    });*/
+    });*!/
     this.router.navigateByUrl(link+"/"+data).then(e=>{
       console.log(e)
     });
@@ -40,5 +57,5 @@ export class AppComponent {
     this.router.navigate([link],{
       queryParams:{order:JSON.stringify(order)}
     })
-  }
+  }*/
 }

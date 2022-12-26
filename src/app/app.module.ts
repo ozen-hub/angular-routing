@@ -8,6 +8,10 @@ import { ItemComponent } from './components/item/item.component';
 import { OrderComponent } from './components/order/order.component';
 import { PlaceOrderComponent } from './components/place-order/place-order.component';
 import { NotFoudPageComponent } from './components/not-foud-page/not-foud-page.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { LoginComponent } from './components/login/login.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import {CookieService} from "ngx-cookie-service";
 
 @NgModule({
   declarations: [
@@ -16,11 +20,14 @@ import { NotFoudPageComponent } from './components/not-foud-page/not-foud-page.c
     ItemComponent,
     OrderComponent,
     PlaceOrderComponent,
-    NotFoudPageComponent
+    NotFoudPageComponent,
+    DashboardComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
