@@ -1,8 +1,10 @@
 <h1>Hello this is Main Component</h1>
 <br>
-
+<input type="text" placeholder="customer name" #customerNameInput>
+<br>
+<br>
 <div>
-  <button routerLink="/customer" routerLinkActive="active">Customer</button>
+  <button routerLink="/customer/{{customerNameInput.value}}" routerLinkActive="active">Customer</button>
   <button routerLink="/item" routerLinkActive="active">Item</button>
   <button routerLink="/order" routerLinkActive="active">Order</button>
 
