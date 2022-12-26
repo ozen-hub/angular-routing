@@ -12,6 +12,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { LoginComponent } from './components/login/login.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import {CookieService} from "ngx-cookie-service";
+import { FinanceComponent } from './components/dashboard/sub-components/finance/finance.component';
+import { HrComponent } from './components/dashboard/sub-components/hr/hr.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import {CookieService} from "ngx-cookie-service";
     PlaceOrderComponent,
     NotFoudPageComponent,
     DashboardComponent,
-    LoginComponent
+    LoginComponent,
+    FinanceComponent,
+    HrComponent
   ],
   imports: [
     BrowserModule,
